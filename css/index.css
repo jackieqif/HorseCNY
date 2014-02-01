@@ -1,0 +1,136 @@
+h1 {
+  text-align: center;
+}
+
+.canvas {
+  z-index: 1;
+  width: 1024px;
+  height:654px;
+  margin: auto auto;
+  background-image: url('../img/background.png');
+  overflow: hidden;
+}
+
+
+.mountain{
+  position: relative;
+  top: 35px;
+  -webkit-animation: fadein_mountain 3s 1s backwards; /* Safari and Chrome */
+   -moz-animation: fadein_mountain 3s 1s backwards; /* Firefox */
+    -ms-animation: fadein_mountain 3s 1s backwards; /* Internet Explorer */
+     -o-animation: fadein_mountain 3s 1s backwards; /* Opera */
+        animation: fadein_mountain 3s 1s backwards;
+}
+
+.pavilion{
+  position: relative;
+  top:30px;
+  text-align: right;
+  -webkit-animation: fadein_pavilion 5s 1.5s backwards; /* Safari and Chrome */
+   -moz-animation: fadein_pavilion 3s 1s backwards; /* Firefox */
+    -ms-animation: fadein_pavilion 3s 1s backwards; /* Internet Explorer */
+     -o-animation: fadein_pavilion 3s 1s backwards; /* Opera */
+        animation: fadein_pavilion 3s 1s backwards;
+}
+
+.plum{
+  display: inline-block;
+  float: left;
+  top:0;
+  -webkit-animation: fadein_plum 5s 2s backwards; /* Safari and Chrome */
+   -moz-animation: fadein_plum 3s 1s backwards; /* Firefox */
+    -ms-animation: fadein_plum 3s 1s backwards; /* Internet Explorer */
+     -o-animation: fadein_plum 3s 1s backwards; /* Opera */
+        animation: fadein_plum 3s 1s backwards;
+}
+
+/*Animation Mountain*/
+@keyframes fadein_mountain {
+    from { opacity: 0; left: -20px; }
+    to   { opacity: 1; left: 0;}
+}
+
+/* Firefox */
+@-moz-keyframes fadein_mountain {
+    from { opacity: 0; left: -20px;}
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein_mountain {
+    from { opacity: 0; left: -20px; }
+    to   { opacity: 1; left: 0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein_mountain {
+    from { opacity: 0; left: -20px;}
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein_mountain {
+    from { opacity: 0; left: -20px;}
+    to   { opacity: 1; }
+}​
+
+
+/*Animation Pavilion*/
+@keyframes fadein_pavilion {
+    from { opacity: 0; right: 1024px; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein_pavilion {
+    from { opacity: 0; right: 1024px; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein_pavilion {
+    from { opacity: 0; right: -60px; }
+    to   { opacity: 1; right:0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein_pavilion {
+    from { opacity: 0; right: 1024px;}
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein_pavilion {
+    from { opacity: 0; right: 1024px;}
+    to   { opacity: 1; }
+}​
+
+
+/*Animation plum*/
+@keyframes fadein_plum {
+    from { opacity: 0; left: -10px; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein_plum {
+    from { opacity: 0; left: -10px; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein_plum {
+    from { opacity: 0; left: -10px; }
+    to   { opacity: 1;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein_plum {
+    from { opacity: 0; left: -10px;}
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein_plum {
+    from { opacity: 0; left: -10px;}
+    to   { opacity: 1; }
