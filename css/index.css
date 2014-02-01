@@ -1,20 +1,29 @@
+body{
+  background-color: #db4437;
+}
+
 h1 {
   text-align: center;
 }
 
 .canvas {
   z-index: 1;
+  position: relative;
   width: 1024px;
   height:654px;
   margin: auto auto;
   background-image: url('../img/background.png');
   overflow: hidden;
+  -webkit-box-shadow: 2px -1px 1px 0px rgba(50, 50, 50, 0.36);
+  -moz-box-shadow:    2px -1px 1px 0px rgba(50, 50, 50, 0.36);
+  box-shadow:         2px -1px 1px 0px rgba(50, 50, 50, 0.36);
+  border-radius: 3px;
 }
 
 
 .mountain{
-  position: relative;
-  top: 35px;
+  position: absolute;
+  top: 355px;
   -webkit-animation: fadein_mountain 3s 1s backwards; /* Safari and Chrome */
    -moz-animation: fadein_mountain 3s 1s backwards; /* Firefox */
     -ms-animation: fadein_mountain 3s 1s backwards; /* Internet Explorer */
@@ -23,10 +32,10 @@ h1 {
 }
 
 .pavilion{
-  position: relative;
+  position: absolute;
   top:30px;
-  text-align: right;
-  -webkit-animation: fadein_pavilion 5s 1.5s backwards; /* Safari and Chrome */
+  right:0;
+  -webkit-animation: fadein_pavilion  ease-out 5s 1.5s backwards; /* Safari and Chrome */
    -moz-animation: fadein_pavilion 3s 1s backwards; /* Firefox */
     -ms-animation: fadein_pavilion 3s 1s backwards; /* Internet Explorer */
      -o-animation: fadein_pavilion 3s 1s backwards; /* Opera */
@@ -34,14 +43,32 @@ h1 {
 }
 
 .plum{
-  display: inline-block;
-  float: left;
+  position: absolute;
   top:0;
-  -webkit-animation: fadein_plum 5s 2s backwards; /* Safari and Chrome */
+  -webkit-animation: fadein_plum 5s 5s backwards; /* Safari and Chrome */
    -moz-animation: fadein_plum 3s 1s backwards; /* Firefox */
     -ms-animation: fadein_plum 3s 1s backwards; /* Internet Explorer */
      -o-animation: fadein_plum 3s 1s backwards; /* Opera */
         animation: fadein_plum 3s 1s backwards;
+}
+
+
+.year_of_horse{
+  position: absolute;
+  top:140px;
+  margin-left: 150px;
+}
+
+
+.horses {
+  position: absolute;
+  right: 0;
+  bottom: 10;
+  -webkit-animation: fadein_plum 4s 3s backwards; /* Safari and Chrome */
+   -moz-animation: fadein_plum 3s 1s backwards; /* Firefox */
+    -ms-animation: fadein_plum 3s 1s backwards; /* Internet Explorer */
+     -o-animation: fadein_plum 3s 1s backwards; /* Opera */
+        animation: fadein_plum 3s 1s backwards; 
 }
 
 /*Animation Mountain*/
@@ -108,29 +135,31 @@ h1 {
 
 /*Animation plum*/
 @keyframes fadein_plum {
-    from { opacity: 0; left: -10px; }
+    from { opacity: 0; }
     to   { opacity: 1; }
 }
 
 /* Firefox */
 @-moz-keyframes fadein_plum {
-    from { opacity: 0; left: -10px; }
+    from { opacity: 0; }
     to   { opacity: 1; }
 }
 
 /* Safari and Chrome */
 @-webkit-keyframes fadein_plum {
-    from { opacity: 0; left: -10px; }
+    from { opacity: 0;}
     to   { opacity: 1;}
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein_plum {
-    from { opacity: 0; left: -10px;}
+    from { opacity: 0; }
     to   { opacity: 1; }
 }​
 
 /* Opera */
 @-o-keyframes fadein_plum {
-    from { opacity: 0; left: -10px;}
+    from { opacity: 0; }
     to   { opacity: 1; }
+}
+
