@@ -39,7 +39,7 @@ h1 {
   width: 1024px;
   height:654px;
   margin: auto auto;
-  background-image: url('../img/background.png');
+  background-image: url('/static/img/background.png');
   overflow: hidden;
   -webkit-box-shadow: 2px -1px 1px 0px rgba(50, 50, 50, 0.36);
   -moz-box-shadow:    2px -1px 1px 0px rgba(50, 50, 50, 0.36);

@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Happy year of Horse!</title>
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+  <div class="canvas">
+
+    <div class="pavilion">
+      <img src="/static/img/pavilion_corner.png" alt="">
+    </div>
+    <div class="year_of_horse">
+      <img src="/static/img/horseyear.png" alt="">
+    </div>
+    <div class="mountain">
+      <img src="/static/img/mountain.png" alt="">
+    </div>
+
+    <div class="horses">
+      <img src="/static/img/horse.png" alt="">
+    </div>
+    <div class="plum">
+      <img src="/static/img/plum.png" alt="">
+    </div>
+    <div class="flying">
+      <img src="/static/img/flying.png" alt="">
+    </div>
+    <div class="flying2">
+      <img src="/static/img/flying.png" alt="">
+    </div>
+    <div class="flying3">
+      <img src="/static/img/flying.png" alt="">
+    </div>
+    <div class="to">Happy Year of Horse to {{username}}!</div>
+    {% if sender %}
+        <div class="from">From: {{sender}}</div>
+    {% endif %}
+  </div>
+
+  <div class="audio">
+<audio src="/static/img/chundaoxiangjiang.mp3" controls autoplay></audio>
+  </div>
+</body>
+</html>
