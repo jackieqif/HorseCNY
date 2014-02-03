@@ -69,10 +69,10 @@ h1 {
   right: 0;
   bottom: 10;
   -webkit-animation: fadein_plum 4s 3s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_plum 3s 1s backwards; /* Firefox */
-    -ms-animation: fadein_plum 3s 1s backwards; /* Internet Explorer */
-     -o-animation: fadein_plum 3s 1s backwards; /* Opera */
-        animation: fadein_plum 3s 1s backwards; 
+   -moz-animation: fadein_plum 4s 3s backwards; /* Firefox */
+    -ms-animation: fadein_plum 3s 3s backwards; /* Internet Explorer */
+     -o-animation: fadein_plum 4s 3s backwards; /* Opera */
+        animation: fadein_plum 4s 3s backwards; 
 }
 
 /*Animation Mountain*/
@@ -167,3 +167,55 @@ h1 {
     to   { opacity: 1; }
 }
 
+
+
+/* flying */
+
+.flying {
+  position: absolute;
+  left:-30px;
+   -webkit-animation: flying 10s 3s forwards 3; /* Safari and Chrome */
+   -moz-animation: flying 10s 3s forwards; /* Firefox */
+    -ms-animation: flying 10s 3s forwards; /* Internet Explorer */
+     -o-animation: flying 10s 3s forwards; /* Opera */
+        animation: flying 10s 3s forwards; 
+}
+
+.flying2 {
+  position: absolute;
+  left:-30px;
+   -webkit-animation: flying 10s 4s forwards; /* Safari and Chrome */
+   -moz-animation: flying 10s 4s forwards; /* Firefox */
+    -ms-animation: flying 10s 4s forwards; /* Internet Explorer */
+     -o-animation: flying 10s 4s forwards; /* Opera */
+        animation: flying 10s 4s forwards; 
+}
+
+.flying3 {
+  left:-30px;
+  position: absolute;
+   -webkit-animation: flying 10s 5s forwards 2; /* Safari and Chrome */
+   -moz-animation: flying 10s 5s forwards; /* Firefox */
+    -ms-animation: flying 10s 5s forwards; /* Internet Explorer */
+     -o-animation: flying 10s 5s forwards; /* Opera */
+        animation: flying 10s 5s forwards; 
+}
+
+@-moz-keyframes flying {
+  0% {-moz-transform:translate(500px, 600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);-moz-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  40% {-moz-transform:translate(100px, 500px) rotateX(0deg) rotateY(-746deg) rotateZ(0deg) translate(-50%, -50%);-moz-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  80% {-moz-transform:translate(500px, 400px) rotateX(0deg) rotateY(-56deg) rotateZ(0deg) translate(-50%, -50%);-moz-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-moz-transform:translate(200px, 400px) rotateX(0deg) rotateY(110deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@-webkit-keyframes flying {
+  0% {-webkit-transform:translate(200px, 600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);-webkit-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  40% {-webkit-transform:translate(150px, 500px) rotateX(0deg) rotateY(-746deg) rotateZ(0deg) translate(-50%, -50%);-webkit-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  80% {-webkit-transform:translate(100px, 400px) rotateX(0deg) rotateY(-56deg) rotateZ(0deg) translate(-50%, -50%);-webkit-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-webkit-transform:translate(50px, 400px) rotateX(0deg) rotateY(110deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@keyframes flying {
+  0% {transform:translate(500px, 600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  40% {transform:translate(100px, 500px) rotateX(0deg) rotateY(-746deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  80% {transform:translate(500px, 400px) rotateX(0deg) rotateY(-56deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {transform:translate(200px, 400px) rotateX(0deg) rotateY(110deg) rotateZ(0deg) translate(-50%, -50%);}
+}
