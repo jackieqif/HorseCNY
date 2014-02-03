@@ -6,6 +6,33 @@ h1 {
   text-align: center;
 }
 
+.title {
+  position: absolute;
+  top:140px;
+  left:350px;
+  font-size: 20;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #db4437;
+  text-shadow: 1px 1px 1px #000;
+
+}
+
+.from {
+  position: absolute;
+  top:340px;
+  left:490px;
+  font-size: 20;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-animation: fadein_plum 4s 4s backwards; /* Safari and Chrome */
+   -moz-animation: fadein_plum 4s 4s backwards; /* Firefox */
+    -ms-animation: fadein_plum 3s 4s backwards; /* Internet Explorer */
+     -o-animation: fadein_plum 4s 4s backwards; /* Opera */
+        animation: fadein_plum 4s 4s backwards;   
+
+}
+
+
 .audio{
   text-align: center;
   opacity: .5;
