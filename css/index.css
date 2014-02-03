@@ -6,6 +6,10 @@ h1 {
   text-align: center;
 }
 
+.audio{
+  text-align: center;
+  opacity: .5;
+}
 .canvas {
   z-index: 1;
   position: relative;
