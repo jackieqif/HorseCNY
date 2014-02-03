@@ -6,39 +6,35 @@ h1 {
   text-align: center;
 }
 
-.title {
+.to, .from{
   position: absolute;
-  top:140px;
-  left:350px;
   font-size: 20;
   font-family: Arial, Helvetica, sans-serif;
-  color: #db4437;
   text-shadow: 1px 1px 1px #000;
+}
 
+.to {
+  top:140px;
+  left:350px;
+  color: #db4437;
 }
 
 .from {
-  position: absolute;
   top:340px;
   left:490px;
-  font-size: 20;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 1px #000;
-  -webkit-animation: fadein_plum 4s 4s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_plum 4s 4s backwards; /* Firefox */
-    -ms-animation: fadein_plum 3s 4s backwards; /* Internet Explorer */
-     -o-animation: fadein_plum 4s 4s backwards; /* Opera */
+  -webkit-animation: fadein_plum 4s 4s backwards;
+   -moz-animation: fadein_plum 4s 4s backwards; 
+    -ms-animation: fadein_plum 3s 4s backwards; 
+     -o-animation: fadein_plum 4s 4s backwards; 
         animation: fadein_plum 4s 4s backwards;   
-
 }
-
 
 .audio{
   text-align: center;
   opacity: .5;
 }
+
 .canvas {
-  z-index: 1;
   position: relative;
   width: 1024px;
   height:654px;
@@ -48,17 +44,17 @@ h1 {
   -webkit-box-shadow: 2px -1px 1px 0px rgba(50, 50, 50, 0.36);
   -moz-box-shadow:    2px -1px 1px 0px rgba(50, 50, 50, 0.36);
   box-shadow:         2px -1px 1px 0px rgba(50, 50, 50, 0.36);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 
 .mountain{
   position: absolute;
   top: 355px;
-  -webkit-animation: fadein_mountain 3s 1s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_mountain 3s 1s backwards; /* Firefox */
-    -ms-animation: fadein_mountain 3s 1s backwards; /* Internet Explorer */
-     -o-animation: fadein_mountain 3s 1s backwards; /* Opera */
+  -webkit-animation: fadein_mountain 3s 1s backwards;
+   -moz-animation: fadein_mountain 3s 1s backwards; 
+    -ms-animation: fadein_mountain 3s 1s backwards; 
+     -o-animation: fadein_mountain 3s 1s backwards; 
         animation: fadein_mountain 3s 1s backwards;
 }
 
@@ -66,23 +62,22 @@ h1 {
   position: absolute;
   top:30px;
   right:0;
-  -webkit-animation: fadein_pavilion  ease-out 5s 1.5s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_pavilion 3s 1s backwards; /* Firefox */
-    -ms-animation: fadein_pavilion 3s 1s backwards; /* Internet Explorer */
-     -o-animation: fadein_pavilion 3s 1s backwards; /* Opera */
-        animation: fadein_pavilion 3s 1s backwards;
+  -webkit-animation: fadein_pavilion  ease-out 5s 1.5s backwards;
+   -moz-animation: fadein_pavilion 5s 1.5s backwards; 
+    -ms-animation: fadein_pavilion 5s 1.5s backwards; 
+     -o-animation: fadein_pavilion 5s 1.5s backwards; 
+        animation: fadein_pavilion 5s 1.5s backwards;
 }
 
 .plum{
   position: absolute;
   top:0;
-  -webkit-animation: fadein_plum 5s 5s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_plum 3s 1s backwards; /* Firefox */
-    -ms-animation: fadein_plum 3s 1s backwards; /* Internet Explorer */
-     -o-animation: fadein_plum 3s 1s backwards; /* Opera */
-        animation: fadein_plum 3s 1s backwards;
+  -webkit-animation: fadein_plum 5s 5s backwards;
+   -moz-animation: fadein_plum 5s 5s backwards; 
+    -ms-animation: fadein_plum 5s 5s backwards; 
+     -o-animation: fadein_plum 5s 5s backwards; 
+        animation: fadein_plum 5s 5s backwards;
 }
-
 
 .year_of_horse{
   position: absolute;
@@ -90,15 +85,14 @@ h1 {
   margin-left: 150px;
 }
 
-
 .horses {
   position: absolute;
   right: 0;
   bottom: 10;
-  -webkit-animation: fadein_plum 4s 3s backwards; /* Safari and Chrome */
-   -moz-animation: fadein_plum 4s 3s backwards; /* Firefox */
-    -ms-animation: fadein_plum 3s 3s backwards; /* Internet Explorer */
-     -o-animation: fadein_plum 4s 3s backwards; /* Opera */
+  -webkit-animation: fadein_plum 4s 3s backwards;
+   -moz-animation: fadein_plum 4s 3s backwards; 
+    -ms-animation: fadein_plum 3s 3s backwards; 
+     -o-animation: fadein_plum 4s 3s backwards; 
         animation: fadein_plum 4s 3s backwards; 
 }
 
@@ -108,25 +102,21 @@ h1 {
     to   { opacity: 1; left: 0;}
 }
 
-/* Firefox */
 @-moz-keyframes fadein_mountain {
     from { opacity: 0; left: -20px;}
     to   { opacity: 1; }
 }
 
-/* Safari and Chrome */
 @-webkit-keyframes fadein_mountain {
     from { opacity: 0; left: -20px; }
     to   { opacity: 1; left: 0;}
 }
 
-/* Internet Explorer */
 @-ms-keyframes fadein_mountain {
     from { opacity: 0; left: -20px;}
     to   { opacity: 1; }
 }​
 
-/* Opera */
 @-o-keyframes fadein_mountain {
     from { opacity: 0; left: -20px;}
     to   { opacity: 1; }
@@ -139,25 +129,18 @@ h1 {
     to   { opacity: 1; }
 }
 
-/* Firefox */
 @-moz-keyframes fadein_pavilion {
     from { opacity: 0; right: 1024px; }
     to   { opacity: 1; }
 }
-
-/* Safari and Chrome */
 @-webkit-keyframes fadein_pavilion {
     from { opacity: 0; right: -60px; }
     to   { opacity: 1; right:0;}
 }
-
-/* Internet Explorer */
 @-ms-keyframes fadein_pavilion {
     from { opacity: 0; right: 1024px;}
     to   { opacity: 1; }
 }​
-
-/* Opera */
 @-o-keyframes fadein_pavilion {
     from { opacity: 0; right: 1024px;}
     to   { opacity: 1; }
@@ -169,63 +152,53 @@ h1 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-/* Firefox */
 @-moz-keyframes fadein_plum {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-/* Safari and Chrome */
 @-webkit-keyframes fadein_plum {
     from { opacity: 0;}
     to   { opacity: 1;}
 }
-
-/* Internet Explorer */
 @-ms-keyframes fadein_plum {
     from { opacity: 0; }
     to   { opacity: 1; }
 }​
-
-/* Opera */
 @-o-keyframes fadein_plum {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
 
-
 /* flying */
-
 .flying {
   position: absolute;
   left:-30px;
-   -webkit-animation: flying 10s 3s forwards 3; /* Safari and Chrome */
-   -moz-animation: flying 10s 3s forwards; /* Firefox */
-    -ms-animation: flying 10s 3s forwards; /* Internet Explorer */
-     -o-animation: flying 10s 3s forwards; /* Opera */
-        animation: flying 10s 3s forwards; 
+   -webkit-animation: flying 10s 3s forwards infinite;
+   -moz-animation: flying 10s 3s forwards infinite; 
+    -ms-animation: flying 10s 3s forwards infinite; 
+     -o-animation: flying 10s 3s forwards infinite; 
+        animation: flying 10s 3s forwards infinite; 
 }
 
 .flying2 {
   position: absolute;
   left:-30px;
-   -webkit-animation: flying 10s 4s forwards; /* Safari and Chrome */
-   -moz-animation: flying 10s 4s forwards; /* Firefox */
-    -ms-animation: flying 10s 4s forwards; /* Internet Explorer */
-     -o-animation: flying 10s 4s forwards; /* Opera */
-        animation: flying 10s 4s forwards; 
+   -webkit-animation: flying 10s 4s forwards infinite;
+   -moz-animation: flying 10s 4s forwards infinite; 
+    -ms-animation: flying 10s 4s forwards infinite; 
+     -o-animation: flying 10s 4s forwards infinite; 
+        animation: flying 10s 4s forwards infinite; 
 }
 
 .flying3 {
   left:-30px;
   position: absolute;
-   -webkit-animation: flying 10s 5s forwards 2; /* Safari and Chrome */
-   -moz-animation: flying 10s 5s forwards; /* Firefox */
-    -ms-animation: flying 10s 5s forwards; /* Internet Explorer */
-     -o-animation: flying 10s 5s forwards; /* Opera */
-        animation: flying 10s 5s forwards; 
+   -webkit-animation: flying 10s 5s forwards infinite;
+   -moz-animation: flying 10s 5s forwards infinite; 
+    -ms-animation: flying 10s 5s forwards infinite; 
+     -o-animation: flying 10s 5s forwards infinite; 
+        animation: flying 10s 5s forwards infinite; 
 }
 
 @-moz-keyframes flying {
