@@ -1,4 +1,4 @@
-<!-- By jackieq@, pls give feedback and enjoy! -->
+<!-- By jackieq@ for googlers, pls give feedback and enjoy! -->
 
 <html>
 <head>
@@ -67,6 +67,7 @@
 </div>
 
 <script language="javascript"> 
+// toggle instructions
 function toggle() {
   var ele = document.getElementById("toggleText");
   var text = document.getElementById("displayDiv");
@@ -77,6 +78,16 @@ function toggle() {
     ele.style.display = "block";
   }
 } 
+
+// GA tracking code
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43980568-3', 'googleplex.com');
+  ga('send', 'pageview');
 </script>
+
 </body>
 </html>
