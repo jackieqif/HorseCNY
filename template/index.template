@@ -1,3 +1,5 @@
+<!-- By jackieq@, pls give feedback and enjoy! -->
+
 <html>
 <head>
   <title>Happy year of Horse!</title>
@@ -32,9 +34,9 @@
     <div class="flying3">
       <img src="/static/img/flying.png">
     </div>
-    <div class="to">Happy Year of Horse to {{username}}!</div>
+    <div class="to">Happy Year of the Horse, {{username}}!</div>
     {% if sender %}
-        <div class="from">From: {{sender}}</div>
+        <div class="from">From, {{sender}}</div>
     {% endif %}
 
     <div class="ribbon">
