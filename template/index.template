@@ -36,7 +36,7 @@
     </div>
     <div class="to">Happy Year of the Horse, {{username}}!</div>
     {% if sender %}
-        <div class="from">From, {{sender}}</div>
+        <div class="from">From,  {{sender}}</div>
     {% endif %}
 
     <div class="ribbon">

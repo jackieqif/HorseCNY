@@ -23,6 +23,11 @@ class MainHandler(webapp2.RequestHandler):
     user = users.get_current_user()
     username = user.nickname()
     sender = self.request.get('sender')
+    try:
+      username = username[0].upper() + username[1:]
+      sender = sender[0].upper() + sender[1:]
+    except IndexError:
+      pass
     data = {'sender': sender, 'username': username}
     result = Render('index.template', data)
     self.response.write(result)
