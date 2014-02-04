@@ -4,41 +4,77 @@
   <link rel="stylesheet" href="/static/css/index.css">
 </head>
 <body>
+<div class="envolope">
   <div class="canvas">
 
     <div class="pavilion">
-      <img src="/static/img/pavilion_corner.png" alt="">
+      <img src="/static/img/pavilion_corner.png">
     </div>
     <div class="year_of_horse">
-      <img src="/static/img/horseyear.png" alt="">
+      <img src="/static/img/horseyear.png">
     </div>
     <div class="mountain">
-      <img src="/static/img/mountain.png" alt="">
+      <img src="/static/img/mountain.png">
     </div>
 
     <div class="horses">
-      <img src="/static/img/horse.png" alt="">
+      <img src="/static/img/horse.png">
     </div>
     <div class="plum">
-      <img src="/static/img/plum.png" alt="">
+      <img src="/static/img/plum.png">
     </div>
     <div class="flying">
-      <img src="/static/img/flying.png" alt="">
+      <img src="/static/img/flying.png">
     </div>
     <div class="flying2">
-      <img src="/static/img/flying.png" alt="">
+      <img src="/static/img/flying.png">
     </div>
     <div class="flying3">
-      <img src="/static/img/flying.png" alt="">
+      <img src="/static/img/flying.png">
     </div>
     <div class="to">Happy Year of Horse to {{username}}!</div>
     {% if sender %}
         <div class="from">From: {{sender}}</div>
     {% endif %}
+
+    <div class="ribbon">
+
+      <a class="plusone" href="https://plus.google.com/share?url={https://greetings.googleplex.com/?sender={{username}}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+  src="/static/img/plusone.png"/></a>
+
+    <a class="share" id="displayDiv" href="javascript:toggle();"><img src="/static/img/share.png" alt=""></a>
+    </div>
+
+    <div id="toggleText" style="display: none">
+      Sharing is Easy:
+      <ul>
+        <li>Copy following URL</li>
+        <li>Send it to your Googler friends</li>
+        <li>Recipient will see him/herself being greeted and you as sender!</li>
+      </ul>
+      <input type="text" name="fname" value="https://greetings.googleplex.com/?sender={{username}}">
+    </div>
+
+  </div>
+  
+  <div class="audio">
+<audio src="/static/img/chundaoxiangjiang.mp3" controls preload="auto" autoplay></audio>
   </div>
 
-  <div class="audio">
-<audio src="/static/img/chundaoxiangjiang.mp3" controls autoplay></audio>
-  </div>
+</div>
+
+<script language="javascript"> 
+function toggle() {
+  var ele = document.getElementById("toggleText");
+  var text = document.getElementById("displayDiv");
+  if(ele.style.display == "block") {
+      ele.style.display = "none";
+    }
+  else {
+    ele.style.display = "block";
+  }
+} 
+</script>
 </body>
 </html>
