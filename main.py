@@ -2,10 +2,10 @@ import datetime
 import jinja2
 import logging
 import webapp2
-from google.appengine.api import users
 
 
 def Render(name, data=None):
+  """Return rendered template as str."""
   if not data:
     data = {}
   environment = jinja2.Environment(
@@ -20,11 +20,10 @@ def Render(name, data=None):
 
 
 class MainHandler(webapp2.RequestHandler):
-  """Handle index page"""
+  """Index page handler."""
   def get(self):
     time_stamp = datetime.datetime.now()
-    user = users.get_current_user()
-    username = user.nickname()
+    username = self.request.get('to')
     sender = self.request.get('sender')
     try:
       username = username[0].upper() + username[1:]

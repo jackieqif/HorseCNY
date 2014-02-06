@@ -1,5 +1,3 @@
-<!-- By jackieq@ for googlers, pls give feedback and enjoy! -->
-
 <html>
 <head>
   <title>Happy year of Horse!</title>
@@ -51,11 +49,10 @@
     <div id="toggleText" style="display: none">
       Sharing is Easy:
       <ul>
-        <li>Copy following URL</li>
-        <li>Send it to your Googler friends</li>
-        <li>Recipient will see him/herself being greeted and you as sender!</li>
+        <li>Add your recipient's name in the below input box after "to="</li>
+        <li>Send the link to your friend!</li>
       </ul>
-      <input type="text" name="fname" value="https://greetings.googleplex.com/?sender={{username}}">
+      <input id="url_box" type="text" name="fname" >
     </div>
 
   </div>
@@ -77,7 +74,12 @@ function toggle() {
   else {
     ele.style.display = "block";
   }
-} 
+};
+
+// 
+var host_url = window.location.origin + window.location.pathname;
+var full_url = host_url + "?sender={{username}};to=";
+document.getElementById('url_box').value = full_url;
 
 // GA tracking code
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
