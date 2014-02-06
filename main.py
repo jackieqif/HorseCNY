@@ -1,11 +1,17 @@
+"""App engine main module for request handling."""
+
+
 import datetime
-import jinja2
 import logging
+
+import jinja2
 import webapp2
+
 from google.appengine.api import users
 
 
 def Render(name, data=None):
+  """Return rendered template as string."""
   if not data:
     data = {}
   environment = jinja2.Environment(
@@ -20,8 +26,10 @@ def Render(name, data=None):
 
 
 class MainHandler(webapp2.RequestHandler):
-  """Handle index page"""
+  """Handle index page."""
+
   def get(self):
+    """Process and respond to get request."""
     time_stamp = datetime.datetime.now()
     user = users.get_current_user()
     username = user.nickname()
@@ -44,4 +52,3 @@ app = webapp2.WSGIApplication([
 
 if __name__ == '__main__':
   logging.getLogger().setLevel(logging.INFO)
-  main()
